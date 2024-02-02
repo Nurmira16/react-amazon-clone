@@ -8,7 +8,7 @@ const App = () => {
       <div className='app'>
       
         <Routes>
-          <Route path='/' element={<div><Header/><h1>Home Page</h1></div>} />
+          <Route path='/' element={<div><Header/><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1></div>} />
           <Route path="/login" element={  <h1>Login</h1>} />
         </Routes>
       </div>
