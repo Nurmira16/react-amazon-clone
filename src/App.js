@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './Header';
+import Header from './components/Header';
+import HomePage from './components/HomePage';
 
 const App = () => {
   return (
@@ -8,8 +9,9 @@ const App = () => {
       <div className='app'>
       
         <Routes>
-          <Route path='/' element={<div><Header/><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1><h1>Home Page</h1></div>} />
-          <Route path="/login" element={  <h1>Login</h1>} />
+          <Route path='/' element={<div><Header/><HomePage/></div>} />
+          <Route path="/checkout" element={  <div><Header/><h1>Checkout</h1></div>} />
+          <Route path="/login" element={ <h1>Login</h1>} />
         </Routes>
       </div>
     </Router>
