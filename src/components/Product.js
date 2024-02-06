@@ -16,16 +16,7 @@ function Product({id,title,rating,price, image}) {
       }
     })
   }
-  const deletefromBasket=()=>{
-    dispatch({type:'REMOVE_FROM_BASKET',
-    item:{
-      id:id,
-      title:title,
-      image:image,
-      price:price,
-      rating:rating
-    }})
-  }
+  
   return (
     <div className='product'>
         <div className='product__info'>
@@ -40,7 +31,7 @@ function Product({id,title,rating,price, image}) {
       </div>
       <img src={image} alt='atomic-habits'/>
       <button onClick={addBasket}>Add to basket</button>
-      <button onClick={deletefromBasket}>delete to basket</button>
+      
     </div>
   )
 }
