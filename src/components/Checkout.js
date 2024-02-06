@@ -3,12 +3,14 @@ import { useStateValue } from '../StateProvider'
 import Item from './CheckoutProduct'
 import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct'
+import SubTotal from './SubTotal'
 
 function Checkout() {
     const[{basket}]=useStateValue()
     console.log(basket)
   return (
     <div className='checkout'>
+      <div className='checkout_left'>
       <img className='checkout-add' src='https://resumespice.com/wp-content/uploads/2021/03/38.png'/>
       {basket?.length===0?(
         <div>
@@ -21,8 +23,17 @@ function Checkout() {
         </div>
       )}
       {basket.map(item=>(
-        <CheckoutProduct item={item.id} title={item.title} image={item.image} price={item.price} rating={item.rating}/>
+        <CheckoutProduct id={item.id} title={item.title} image={item.image} price={item.price} rating={item.rating}/>
       ))}
+      </div>
+      {basket.length>0 &&(
+        <div className='checkout_right'>
+      
+          <SubTotal/>
+        </div>
+      )}
+      
+
     </div>
   )
 }

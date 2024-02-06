@@ -1,18 +1,14 @@
 import React from 'react'
 import { useStateValue } from '../StateProvider'
 import './CheckoutProduct.css'
-function CheckoutProduct({item,title,image, price,rating,id}) {
+function CheckoutProduct({id,title,image, price,rating}) {
     const[{basket},dispatch]=useStateValue()
   
     const deletefromBasket=()=>{
-      dispatch({type:'REMOVE_FROM_BASKET',
-      item:{
+      dispatch({
+        type:'REMOVE_FROM_BASKET',
         id:id,
-        title:title,
-        image:image,
-        price:price,
-        rating:rating
-      }})
+        })
     }
   return (
     <div className='checkout_product'>
@@ -27,7 +23,7 @@ function CheckoutProduct({item,title,image, price,rating,id}) {
         <div className='checkout_product_rating'>
           {Array(rating).fill().map((_)=>(<p>⭐</p>))}
         </div>
-      <button onClicks={deletefromBasket}>delete to basket</button>
+      <button onClick={deletefromBasket}>delete to basket</button>
       </div>
     </div>
        
