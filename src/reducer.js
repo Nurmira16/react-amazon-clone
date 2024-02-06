@@ -1,4 +1,9 @@
+export const getBasketTotal=(basket)=>{
+    return(
+    basket?.reduce((amount,item)=>item.price + amount,0))
 
+
+}
 export const initialState={
     basket:[{
         id:'123323',
@@ -43,3 +48,6 @@ function reducer(state,action){
     }
 }
 export default reducer
+
+//selector
+
