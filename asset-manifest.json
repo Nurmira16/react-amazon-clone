@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-amazon-clone/static/css/main.4c223a7e.css",
-    "main.js": "/react-amazon-clone/static/js/main.dac6bd3b.js",
+    "main.js": "/react-amazon-clone/static/js/main.ea933ab1.js",
     "index.html": "/react-amazon-clone/index.html",
     "main.4c223a7e.css.map": "/react-amazon-clone/static/css/main.4c223a7e.css.map",
-    "main.dac6bd3b.js.map": "/react-amazon-clone/static/js/main.dac6bd3b.js.map"
+    "main.ea933ab1.js.map": "/react-amazon-clone/static/js/main.ea933ab1.js.map"
   },
   "entrypoints": [
     "static/css/main.4c223a7e.css",
-    "static/js/main.dac6bd3b.js"
+    "static/js/main.ea933ab1.js"
   ]
 }
