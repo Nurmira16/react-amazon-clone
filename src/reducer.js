@@ -5,14 +5,7 @@ export const getBasketTotal=(basket)=>{
 
 }
 export const initialState={
-    basket:[{
-        id:'123323',
-        title:'HP 14" HD Laptop Newest Stream, Intel Celeron Quad-Core Processor, 8GB DDR4 RAM, 64GB eMMC, 1 Year Office 365, WiFi, Bluetooth, HDMI, Webcam, USB Type-A&C w/GM Accessory',
-        price:219.99,
-        rating:4,
-        image:'https://m.media-amazon.com/images/I/413eiUutzJL._AC_.jpg'
-
-    },
+    basket:[
     {
         id:'123323',
         title:'HP 14" HD Laptop Newest Stream, Intel Celeron Quad-Core Processor, 8GB DDR4 RAM, 64GB eMMC, 1 Year Office 365, WiFi, Bluetooth, HDMI, Webcam, USB Type-A&C w/GM Accessory',

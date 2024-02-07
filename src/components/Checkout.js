@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStateValue } from '../StateProvider'
-import Item from './CheckoutProduct'
 import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct'
 import SubTotal from './SubTotal'
@@ -11,7 +10,7 @@ function Checkout() {
   return (
     <div className='checkout'>
       <div className='checkout_left'>
-      <img className='checkout-add' src='https://resumespice.com/wp-content/uploads/2021/03/38.png'/>
+      <img className='checkout-add' src='https://resumespice.com/wp-content/uploads/2021/03/38.png' alt='check'/>
       {basket?.length===0?(
         <div>
           <h2 className='checkout-title'>Your Shopping Basket is empty.</h2>
